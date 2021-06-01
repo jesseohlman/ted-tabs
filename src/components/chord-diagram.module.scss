@@ -1,0 +1,50 @@
+.grid {
+	position: absolute;
+	border: 1px solid black;
+	height: 300px;
+	width: 175px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 0fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid div {
+	&[data-border] {
+		border: 1px solid black;
+	}
+	position: relative;
+}
+
+.dot {
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	display: inline-block;
+}
+
+.string_select {
+	height: 100%;
+	position: absolute;
+	left: -15px;
+	width: 30px;
+	background: transparent;
+	border: none !important;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.chord_name {
+}
+
+.fret_number {
+	position: absolute;
+}
+
+.chord_container {
+	position: relative;
+}
